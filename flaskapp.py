@@ -28,7 +28,6 @@ def price_lookup(code):
     data = {}
     if result is not None:
         data[str(code)] = str(result[0])
-        print jsonify(**data)
         return jsonify(**data)
 
     data[str(code)] = "Not Found"
