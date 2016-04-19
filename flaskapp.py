@@ -19,16 +19,17 @@ def price_lookup(code):
     html = urllib.urlopen(address).read() # READ IT ALL
     soup = BeautifulSoup(html, "html.parser")
     tags = soup('span')
-
+    result = None
     for tag in tags:
         if tag.get('id', None) == 'quote_val':
             cont = str(tag.contents)
             result = re.findall('[0-9.]+', cont)
 
     data = {}
+    print result
     if result is not None:
         data[str(code)] = str(result[0])
         return jsonify(**data)
-
-    data[str(code)] = "Not Found"
-    return jsonify(**data)
+    else:
+        data[str(code)] = "Not Found"
+        return jsonify(**data)
