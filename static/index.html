@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<!--
+Created using JS Bin
+http://jsbin.com
+
+Copyright (c) 2016 by jsome (http://jsbin.com/padobu/26/edit)
+
+Released under the MIT license: http://jsbin.mit-license.org
+-->
+<meta name="robots" content="noindex">
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+<style id="jsbin-css">
+body {
+  background: rgba(252, 252, 252, 1.0);
+  color: #2B2B2B;
+  font-family:"Abel", sans-serif;
+  font-size:20px;
+}
+
+@font-face {
+  font-family:FontAwesome;
+  src: url(https://netdna.bootstrapcdn.com/font-awesome/2.0/font//fontawesome-webfont.eot?#iefix) format('eot'), url(https://netdna.bootstrapcdn.com/font-awesome/2.0/font//fontawesome-webfont.woff) format('woff'), url(https://netdna.bootstrapcdn.com/font-awesome/2.0/font//fontawesome-webfont.ttf) format('truetype'), url(https://netdna.bootstrapcdn.com/font-awesome/2.0/font//fontawesome-webfont.svg#FontAwesome) format('svg')
+}
+
+span {
+  color: #17D98B;
+  -webkit-text-stroke-color: #111111;
+  -webkit-text-stroke-width: 3px;
+}
+
+h1, h2, h3 {
+  font-family: "Gill Sans MT";
+  font-weight:bold;
+  text-transform:uppercase;
+  margin: 0px;
+  padding: 0px;
+  color: #111111;
+  text-align: center;
+}
+
+h2 {
+  color:#2B2B2B;
+}
+
+h3 {
+  letter-spacing:20px;
+}
+
+#logo3 h3 {
+  color: #E9A158;
+}
+
+#header {
+  width: 1000px;
+  margin: 50px auto;  
+}
+
+#logo1 h1 {
+  line-height:150px;
+  width:1000px;
+  font-size: 7em;
+}
+
+#threeColumns {
+  overflow:hidden;
+  width: 1000px;
+  margin: 0px auto;
+  padding: 30px 30px;
+}
+
+#threeColumns #column1 {
+  float:left;
+  width: 300px;
+  margin-right: 50px;
+}
+
+#threeColumns #column2 {
+  float:left;
+  width: 300px;
+}
+
+#threeColumns #column3 {
+  float:right;
+  width: 300px;
+}
+
+#column1 p1:before {
+  font-family:"FontAwesome";
+  content: "\f016";
+  font-size: 150px;
+  display:block;
+  text-align:center;
+}
+
+#column2 p2:before {
+  font-family:"FontAwesome";
+  content: "\f00c";
+  font-size: 150px;
+  display:block;
+  text-align:center;
+}
+
+#column3 p3:before {
+  font-family:"FontAwesome";
+  content: "\f044";
+  font-size: 150px;
+  display:block;
+  text-align:center;
+}
+
+</style>
+</head>
+<body>
+
+  <div id = "page">
+     <div id = "header-page">
+         <div id = "header">
+             <div id = "logo1">
+               <h1> <span>Stock</span>Web </h1>
+             </div>
+             <div id = "logo2">
+               <h3> Stock Price Query Service </h3>
+             </div>
+             <div id = "logo3">
+               <h3> Philippine Stock Exchange </h3>
+             </div>
+         </div>
+     </div>
+  </div>
+  
+  <div id = "threeColumns">
+     <div id = "column1">
+       <p1> </p1>
+       <h2> About </h2>
+       <p> StockWeb is an easy-to-use service that allows you to query stock prices for companies listed in the Philippine Stock Exchange. </p>
+     </div>
+     <div id = "column2">
+        <p2> </p2>
+       <h2> Usage </h2>
+       <p> http://stockweb-triapps.rhcloud.com/stock/{code} </p>
+       <p> Get back a JSON-formatted stock code and price </p>
+     </div>
+     <div id = "column3">
+        <p3> </p3>
+       <h2> Feedback </h2>
+       <p> Feedback? Suggestions? Drop me a line at john.lee.programming@gmail.com </p>
+     </div>
+
+  </div>
+  
+</body>
+</html>
